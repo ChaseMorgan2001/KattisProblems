@@ -1,0 +1,21 @@
+c1, c2, c3, c4, c5 = input().split()
+cards = [c1, c2, c3, c4, c5]
+hand= list()
+for i in cards:
+    if i not in hand:
+        hand.extend(i)
+a=hand.count('A')
+two=hand.count('2')
+three=hand.count('3')
+four=hand.count('4')
+five=hand.count('5')
+six=hand.count('6')
+seven=hand.count('7')
+eight=hand.count('8')
+nine=hand.count('9')
+t=hand.count('T')
+j=hand.count('J')
+q=hand.count('Q')
+k=hand.count('K')
+strength=max(a, two, three, four, five, six, seven, eight, nine, t, j, q, k)
+print(strength)
